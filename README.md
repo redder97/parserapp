@@ -22,7 +22,11 @@ and your java version.
 3) run `java -jar target/java-project-1.0-SNAPSHOT.jar $DIR_TO_WATCH`
    1) replace ``$DIR_TO_WATCH`` with the actual directory to watch.
    2) if there are spaces, surround `$DIR_TO_WATCH` with "" (double quotes).
-4) Start adding supported files (currently only .txt files)
+4) Start adding supported files to the directory (currently only .txt files).
+   1) A `/processed` is automatically created within the `$DIR_TO_WATCH` if none exists, to house processed
+   files.
+   2) A `/unprocessed` is automatically created within the `$DIR_TO_WATCH` if none exists, to house
+   unprocessed files.
 
 ### Running tests
 1) cd into project dir root
